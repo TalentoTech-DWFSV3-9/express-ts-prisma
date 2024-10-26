@@ -15,7 +15,22 @@ datasource db {
 
 model Customer {
   id    Int     @id @default(autoincrement())
-  name  String
+  name  String 
   email String
   phone String
+}
+
+
+model Product {
+  id    Int     @id @default(autoincrement())
+  name  String
+  price Float
+  stock Int
+  orderId Int?
+  order Order? @relation(fields: [orderId], references: [id])
+}
+
+model Order {
+  id    Int     @id @default(autoincrement())
+  products Product[]
 }
