@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Versión de JavaScript a la que compilar
+    "module": "commonjs", // Módulo a utilizar
+    "rootDir": "./src", // Carpeta de entrada
+    "outDir": "./dist", // Carpeta de salida
+    "strict": true, // Activar todas las comprobaciones
+    "esModuleInterop": true, // Permitir importaciones de módulos de ES
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"], // Archivos a incluir
+  "exclude": ["node_modules"] // Carpeta a excluir
+}
